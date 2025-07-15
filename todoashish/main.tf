@@ -17,6 +17,11 @@ resource_group_name     = "rg-nginx1190"
 resource_group_location = "WestEurope"
 }
 
+module "resource_group" {
+  source = "../Modules/azurerm_resource_group"
+resource_group_name     = "rg-finalcode"
+resource_group_location = "WestEurope"
+}
 
 module "virtual_network" {
   depends_on           = [module.resource_group]
