@@ -13,7 +13,7 @@ resource_group_location = "Westus"
 
 module "resource_group" {
   source = "../Modules/azurerm_resource_group"
-resource_group_name     = "rg-nginx1190"
+resource_group_name     = "rg-kalu1190"
 resource_group_location = "WestEurope"
 }
 
