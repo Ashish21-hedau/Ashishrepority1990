@@ -5,14 +5,15 @@ resource_group_location = "WestEurope"
 }
 
 
-  module "resource_group" {
+module "resource_group" {
   source = "../Modules/azurerm_resource_group"
-resource_group_name     = "rg-ashish"
-resource_group_location = "Westus"
+resource_group_name     = "rg-nginx1990"
+resource_group_location = "WestEurope"
 }
 
 module "resource_group" {
   source = "../Modules/azurerm_resource_group"
+
 resource_group_name     = "rg-kalu1190"
 resource_group_location = "WestEurope"
 }
